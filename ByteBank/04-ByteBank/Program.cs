@@ -15,8 +15,10 @@ namespace _04_ByteBank
 
             Console.WriteLine(conta.saldo);
             conta.Sacar(50);
-            Console.WriteLine(conta.saldo);
 
+            bool resultadoSaque = conta.Sacar(50);
+            Console.WriteLine(conta.saldo);
+            Console.WriteLine(resultadoSaque);
             Console.ReadLine();
         }
     }
